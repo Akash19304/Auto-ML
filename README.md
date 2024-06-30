@@ -5,11 +5,7 @@ This project is a Streamlit web application designed for data exploration, prepr
 
 ### Features
 - **Upload Dataset**: Upload CSV data for analysis and model training.
+- **Ask CSV**: Lets you talk to your dataset in natural language. 
 - **Data Profiling**: Generate detailed exploratory data analysis (EDA) reports using ydata_profiling.
 - **Model Training**: Choose between classification and regression tasks, select target variables, and compare models using PyCaret.
 - **Model Deployment**: Download the best-performing model for deployment.
-
-### Libraries Used
-- **Streamlit**: For creating the interactive web application.
-- **PyCaret**: For automating machine learning workflows including setup, model comparison, and deployment.
-- **ydata_profiling**: For generating comprehensive EDA reports.
