@@ -23,8 +23,8 @@ from csv_agent import ask_csv
 
 # Load dataset if it exists
 
-if "file" not in st.session_state:
-    file = None
+# if "file" not in st.session_state:
+#     file = None
 
 if os.path.exists('./dataset.csv'):
     df = pd.read_csv('dataset.csv', index_col=None)
@@ -51,7 +51,7 @@ if choice == "Upload":
         st.success("File uploaded successfully!")
         st.dataframe(df)
 
-if choice == "Ask CSV":
+if choice == "Ask CSV" and 'df' in locals():
     st.title("Ask your dataset")
     if 'file_path' in st.session_state:
         ask_csv(st.session_state.file_path)
